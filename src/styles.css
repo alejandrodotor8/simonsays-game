@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+/* font-family: 'Audiowide', cursive;
+font-family: 'Dosis', sans-serif; */
+body {
+	background-color: #262626;
+}
+main {
+   position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
+}
+header {
+	width: 100vw;
+	text-align: center;
+	font-family: 'Audiowide', cursive;
+	font-size: 2rem;
+	color: #f2f2f2;
+	padding: 5rem 0;
+}
+h1 {
+	filter: drop-shadow(0px 0px 2px #2cffec);
+}
+section {
+	display: grid;
+	grid-template-columns: repeat(3, 10rem);
+	grid-template-rows: repeat(3, 10rem);
+	gap: 2rem;
+	justify-content: center;
+	align-content: center;
+}
+.BTN-play {
+   position: absolute;
+   z-index: 999;
+   top: 40vh;
+}
+.BTN-play img{
+   width: 300px;
+   height: 300px;
+}
+.item {
+	background: #4cb1a9;
+	border-radius: 1rem;
+}
+footer {
+	width: 100vw;
+	text-align: right;
+}
+footer a img {
+	width: 4rem;
+	margin: 0 10vw;
+}
