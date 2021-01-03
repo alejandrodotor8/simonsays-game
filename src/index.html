@@ -12,32 +12,32 @@
 		<title>Simon says</title>
 	</head>
 	<body>
-      <main>
-         <div class="BTN-play">
-            <a href="#">
-               <img src="./img/StartBTN.svg"/>
-            </a>
-         </div>
-         <header>
-            <h1>SIMON SAYS GAME</h1>
-         </header>
-         <section>
-            <div class="item item-1">2</div>
-            <div class="item item-2">1</div>
-            <div class="item item-3">3</div>
-            <div class="item item-4">4</div>
-            <div class="item item-5">5</div>
-            <div class="item item-6">6</div>
-            <div class="item item-7">7</div>
-            <div class="item item-8">8</div>
-            <div class="item item-9">9</div>
+		<main>
+			<button id="BTN-play" class="BTN-play" onclick="startGame()">
+				<img src="./img/StartBTN.svg" />
+			</button>
+			<header>
+				<h1>SIMON SAYS GAME</h1>
+			</header>
+			<section>
+				<div id="item-1" class="item" data-item="item1"></div>
+				<div id="item-2" class="item" data-item="item2"></div>
+				<div id="item-3" class="item" data-item="item3"></div>
+				<div id="item-4" class="item" data-item="item4"></div>
+				<div id="item-5" class="item" data-item="item5"></div>
+				<div id="item-6" class="item" data-item="item6"></div>
+				<div id="item-7" class="item" data-item="item7"></div>
+				<div id="item-8" class="item" data-item="item8"></div>
+				<div id="item-9" class="item" data-item="item9"></div>
          </section>
-         <footer>
-            <a href="https://github.com/alejandrodotor8/simonsays-game">
-               <img src="./img/icons8-github.svg"/>
-            </a>
-         </footer>
+         <p id="text-explain">Just click the button if you want to play</p>
+			<footer>
+				<a href="https://github.com/alejandrodotor8/simonsays-game">
+					<img src="./img/icons8-github.svg" />
+				</a>
+			</footer>
       </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
 		<script src="./app.js"></script>
 	</body>
 </html>
